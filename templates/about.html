@@ -1,6 +1,72 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block title %}เกี่ยวกับเรา{% endblock %}
 
 {% block content %}
-    <h1 class="mt-4">Welcome to the Sale App</h1>
-    <p>เกี่ยวกับเรา</p>
+<div class="container mt-5">
+
+  <!-- หัวข้อหลัก -->
+  <div class="text-center mb-5">
+    <h1 class="text-danger" style="font-weight: bold;">เกี่ยวกับเรา</h1>
+    <h2 class="text-pink">นางสาววาสินี มาฤทธิ์ <span class="badge bg-pink">6712732126</span></h2>
+    <p class="lead text-secondary">เราคือหนึ่งในนักศึกษาที่เรียนในสาขาวิทยาการคอมพิวเตอร์ ด้วยความรักในเทคโนโลยีและความตั้งใจ</p>
+  </div>
+
+  <!-- วิสัยทัศน์ -->
+  <div class="p-4 mb-4 rounded" style="background-color: #ffe6f0;">
+    <h3 class="text-pink">🌸 วิสัยทัศน์ (Vision)</h3>
+    <p>มุ่งมั่นเป็นผู้นำด้านเทคโนโลยีการจัดการการขาย ที่ตอบโจทย์ทุกกลุ่มธุรกิจ ด้วยเครื่องมือที่ใช้งานง่ายและทันสมัย</p>
+    <hr>
+    <h5 class="text-danger mt-3">💡 บทบาทของสาขาวิทยาการคอมพิวเตอร์</h5>
+    <p>
+      สาขาวิทยาการคอมพิวเตอร์มีบทบาทสำคัญในการพัฒนาแอปพลิเคชันด้านธุรกิจ โดยเฉพาะการออกแบบระบบที่ช่วยจัดการข้อมูลการขาย การวิเคราะห์ข้อมูลลูกค้า และการปรับปรุงประสิทธิภาพของธุรกิจให้ทันสมัยและสอดคล้องกับยุคดิจิทัล
+    </p>
+    <ul class="ms-3">
+      <li>สร้างระบบที่มีความปลอดภัยและเสถียร</li>
+      <li>นำปัญญาประดิษฐ์ (AI) และการวิเคราะห์ข้อมูลมาใช้</li>
+      <li>พัฒนาแอปพลิเคชันที่ตอบโจทย์ผู้ใช้จริง</li>
+      <li>ส่งเสริมการเรียนรู้และนวัตกรรมในด้านเทคโนโลยีสารสนเทศ</li>
+    </ul>
+  </div>
+
+  <!-- ทีมอาจารย์ -->
+  <div class="p-4 mb-4 rounded" style="background-color: #ffe0eb;">
+    <h3 class="text-center text-danger mb-4">💖 อาจารย์ที่เรารักและเคารพ</h3>
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์1.jpg' %}" class="rounded-circle shadow mb-3 border border-danger border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-pink">ผศ.พิศาล สุขขี</h5>
+        <p class="text-muted">อาจารย์ที่ปรึกษาโครงการ</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์2.jpg' %}" class="rounded-circle shadow mb-3 border border-danger border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-pink">ผศ.ดร.กนิษฐา อินธิชิต</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์3.jpg' %}" class="rounded-circle shadow mb-3 border border-danger border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-pink">อ.อุรารัตย์ แก้งดวงงาม</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <img src="{% static 'อาจารย์4.png' %}" class="rounded-circle shadow mb-3 border border-danger border-3" style="width: 120px; height: 120px;" alt="Team Member">
+        <h5 class="text-pink">ดร.กริชบดินทร์ ผิวหอม</h5>
+        <p class="text-muted">อาจารย์ผู้สอน</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Custom สีชมพู -->
+<style>
+  .text-pink {
+    color: #d63384;
+  }
+  .bg-pink {
+    background-color: #f8d7da;
+    color: #842029;
+  }
+</style>
 {% endblock %}

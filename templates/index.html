@@ -1,6 +1,40 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-    <h1 class="mt-4">Welcome to the Sale App</h1>
-    <p>This is the index page of the Sale application.</p>
+<div class="container mt-4 text-center">
+
+  <!-- หัวข้อ -->
+  <h1 class="display-4 mb-3 text-pink fw-bold">สวัสดีค่าา~ นางสาววาสินี มาฤทธิ์เองค่าาา  👩‍💻</h1>
+
+  <!-- รูปโปรไฟล์ -->
+  <img src="{% static 'ui.png' %}" alt="Profile" class="rounded-circle shadow mb-4 border border-danger border-3" width="180" height="180">
+
+  <!-- คำอธิบายสั้น -->
+  <p class="lead text-secondary">เว็บไซต์นี้คือผลงานหนึ่งในวิชาชีวิตของเด็กวิทย์คอม ที่ตั้งใจพัฒนาด้วยแรงใจและแรง Ctrl+S 💾</p>
+
+  <!-- การ์ดแนะนำตัว -->
+  <div class="card mx-auto mt-4 shadow" style="max-width: 500px; background-color: #fff0f5;">
+    <div class="card-body">
+      <h5 class="card-title text-danger">About Me</h5>
+      <p class="card-text text-dark">
+        หนูเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์ ที่ใช้ชีวิตวนอยู่กับโค้ด บั๊ก และกาแฟ ☕<br>
+        <br>
+        บางวันก็อยู่กับ Python 🐍 บางคืนก็นั่งงงกับ CSS ที่ไม่ยอมขึ้นสักที 😵‍💫 <br>
+        แต่ไม่ว่าจะหนักแค่ไหน เราก็ยังรักในโลกของเทคโนโลยี เพราะมันคือพื้นที่ที่เราได้ “สร้าง” อะไรใหม่ ๆ ทุกวัน ✨<br>
+        <br>
+        หากมีคำถาม ข้อเสนอแนะ หรืออยากส่งกำลังใจ สามารถส่งอีเมลมาได้ที่ :<br>
+        <a href="mailto:your@email.com" class="text-decoration-none text-danger">vasineemalit2546@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- เพิ่มสีชมพูแบบกำหนดเอง -->
+<style>
+  .text-pink {
+    color: #d63384;
+  }
+</style>
 {% endblock %}
